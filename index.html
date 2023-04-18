@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <link rel="stylesheet" href="./Library/library_style.css">
+    </head>
+    <body>
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-1">
+                <a href="index.html" class="logo"><i class="fas fa-book"> Library </i></a>
+           
+                <form action="" class="search-form">
+                    
+                    <input type="search" placeholder ="Search here..." id="search-box">
+                    <label id="search-box" class="fas fa-search"></label>
+                </form>
+
+                <div class="icons">
+                    <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a id="login-btn" href="./Login/user.html" class="fas fa-user"></a>
+
+                </div>
+            </div>
+           
+            <div class="header-2">
+                <nav class="navbar">
+                        <a href="#home">home</a>
+                        <a href="#books">books</a>
+                        <a href="#trending">trending</a>
+                        <a href="#bestOf">best</a>
+                        <a href="#contacts">contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HOME -->
+         <section class="home" id="home">
+            <div class="row">
+                <div class="content1">
+                    <h3>Books available</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis adipisci, suscipit sunt non iure saepe totam ut molestiae exercitationem provident?</p>
+                    <a href="#" class="btn1">borrow</a>
+                </div>
+
+                <div class="swiper books-slider">
+                    <div class="swiper-wrapper">
+                        <a href="#" class = "swiper-slide"><img src="./Images/alchemist.jpg" alt=""></a>
+                        <a href="#" class = "swiper-slide"><img src="./Images/alchemist.jpg" alt=""></a>
+                        <a href="#" class = "swiper-slide"><img src="./Images/alchemist.jpg" alt=""></a>
+                        <a href="#" class = "swiper-slide"><img src="./Images/alchemist.jpg" alt=""></a>
+                        <a href="#" class = "swiper-slide"><img src="./Images/alchemist.jpg" alt=""></a>
+                        <a href="#" class = "swiper-slide"><img src="./Images/alchemist.jpg" alt=""></a>
+                        <a href="#" class = "swiper-slide"><img src="./Images/alchemist.jpg" alt=""></a>
+                        <a href="#" class = "swiper-slide"><img src="./Images/alchemist.jpg" alt=""></a>
+                    </div>
+
+                    <img class="stand" src="./Images/stand.png" />
+                </div>
+            </div>
+         </section>
+
+        <!-- BOOKS -->
+        <div id="books" class="container">
+           <div class="allBooks">
+            <h1 class="heading">Books</h1>
+            <a href="./All Books/allBooks.html" class="all-books">All books</a>
+           </div>
+            <div class="box-container">
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                    <div class="image">
+                        <img src="./Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="load-more"> load more </div>
+        </div>
+
+        <!-- TRENDING SECTION STARTS -->
+        <section class="trending" id="trending">
+            
+            <h1 class="heading"><span>Trending books</span></h1>
+
+            <div class="swiper trending-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>featured books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </section>
+
+        <!-- BEST OF APRIL -->
+        <section class="trending" id="bestOf">
+            
+            <h1 class="heading"><span>Best of April</span></h1>
+
+            <div class="swiper trending-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>featured books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide boxT">
+                        <div class="icons">
+                            <a href="" class="fas fa-search"></a>
+                            <a href="" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <img src="./Images/alchemist.jpg">
+                        </div>
+                        <div class="content1">
+                            <h3>Trending books</h3>
+                            <a href="#" class="btn1">Borrow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </section>
+
+        <!-- NAV BOTTOM -->
+        <nav class="bottom-navbar">
+            <a href="#home" class = "fas fa-home"></a>
+            <a href="#books" class = "fas fa-book"></a>
+            <a href="#trending" class = "fas fa-fire"></a>
+            <a href="#bestOf" class = "fas fa-trophy"></a>
+            <a href="#contacts" class = "fas fa-phone"></a>
+        </nav>
+
+        
+        <!-- FOOTER -->
+        <section class="footer" id="contacts">
+            
+            <div class="box-container">
+                
+                <div class="boxF">
+                    <h3>Locations</h3>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>India</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>USA</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Russia</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>China</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Japan</a>
+                </div>
+                
+                <div class="boxF">
+                    <h3>quick links</h3>
+                    <a href="#home"><i class="fas fa-arrow-right"></i>home</a>
+                    <a href="#books"><i class="fas fa-arrow-right"></i>Books</a>
+                    <a href="#trending"><i class="fas fa-arrow-right"></i>trending</a>
+                    <a href="#best"><i class="fas fa-arrow-right"></i>best</a>
+                    <a href="#contacts"><i class="fas fa-arrow-right"></i>contact</a>
+                </div>
+
+                <div class="boxF">
+                    <h3>extra links</h3>
+                    <a href="#"><i class="fas fa-arrow-right"></i>account info</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>borrowed items</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>privacy policy</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>payment method</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>our service</a>
+                </div>
+
+                <div class="boxF">
+                    <h3>contact info</h3>
+                    <a download href="tel:+91xxxxxxxxxx"><i class="fas fa-phone"></i>+91 1234567890</a>
+                    <a download href="tel:+91xxxxxxxxxx"><i class="fas fa-phone"></i>+91 1234567890</a>
+                    <a download href="mailto:support@gmail.com"><i class="fas fa-envelope"></i> support@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="share">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                <a href="#"><i class="fab fa-github"></i></a>
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+            </div>
+
+            <div class="credit">created by <span>mr. Narendran</span> | all rights reserved!    </div>
+
+        </section>
+
+
+        <div class="loader-container">
+            <img src="./Images/loader 2.gif" alt="">
+        </div>
+
+
+
+
+
+        <!-- JAVASCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="./Library/library_script.js"></script>
+        <script>
+            let loadBtn = document.querySelector('#load-more');
+            let currentItem = 3;
+
+            loadBtn.onclick = () =>{
+                
+                let boxes = [...document.querySelectorAll('.container .box-container .box')];
+                
+                for(var i=currentItem; i < currentItem + 3; i++){
+                        
+                    boxes[i].style.display = 'block';
+                }
+                currentItem += 3;
+
+                if(currentItem >= boxes.length){
+                    loadBtn.style.display ='none'
+                }
+            }
+        </script>
+
+       
+    </body>
+</html>

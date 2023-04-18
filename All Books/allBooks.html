@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Books</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <link rel="stylesheet" href="allBooks-styles.css">
+
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="header-1">
+        <a href="../index.html" class="logo"><i class="fas fa-book"> Library </i></a>
+
+                <div class="container1">
+                    <div class="select-box">
+                        <select name="slct1" id="slct1" class="select" onchange="selected(this.id)">
+                            <!-- onchange="populate(this.id, 'slct2')" -->
+                            <option value="filter" >--Filter--</option>
+                            <option value="title"   data-filter="Title">Title</option>
+                            <option value="author"  data-filter="Author">Author</option>
+                            <option value="subject" data-filter="Subject">Subject</option>
+                            <option value="year" data-filter="year">Published year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- <div class="container1">
+                    <div class="select-box">
+                        <select name="slct2" id="slct2">
+                        </select>
+                    </div>
+                </div> -->
+
+                <form action="" class="search-form">
+                    <input type="search" placeholder ="Search here..." id="search-box">
+                    <label id="search-box" class="fas fa-search"></label>
+                </form>
+
+                <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <!-- <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a id="login-btn" href="user.html" class="fas fa-user"></a> -->
+
+                </div>
+            </div>
+        </header>
+
+        <div id="books" class="container">
+            <div class="allBooks">
+             <h1 class="heading">Books</h1>
+             <h3 class="count">Book Count :</h3>
+            </div>
+             <div class="box-container" id="boxc">
+                 <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Hamlet">
+                     <div class="image">
+                         <img src="../Images/alchemist.jpg" alt="">
+                     </div>
+                     <div class="content">
+                         <h3>Book title goes here</h3>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                         <a href="#" class="btn">Borrow</a>
+                         <div class="icons">
+                             <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                             <span class="author"><i class="fas fa-user"></i> Author name</span>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="box" data-year="2000" data-genre="comedy" data-author="William Shakespeare" data-title="Romeo And Juliet">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="comedy" data-author="William Shakespeare" data-title="King Lear">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Macbeth">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="Twelfth Night">
+                     <div class="image">
+                         <img src="../Images/alchemist.jpg" alt="">
+                     </div>
+                     <div class="content">
+                         <h3>Book title goes here</h3>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                         <a href="#" class="btn">Borrow</a>
+                         <div class="icons">
+                             <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                             <span class="author"><i class="fas fa-user"></i> Author name</span>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="box" data-year="2000" data-genre="tragedy" data-author="William Shakespeare" data-title="The Tempest">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" data-year="2000" data-genre="tragedy" data-author="Paulo Coelho" data-title="The Alchemist">
+                    <div class="image">
+                        <img src="../Images/alchemist.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Book title goes here</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et blanditiis quisquam impedit saepe laboriosam laudantium at magni.</p>
+                        <a href="#" class="btn">Borrow</a>
+                        <div class="icons">
+                            <span  class="genre"><i class="fas fa-book-open"></i> comedy</span>
+                            <span class="author"><i class="fas fa-user"></i> Author name</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+             </div>
+ 
+        </div>
+
+        <div class="loader-container">
+            <img src="../Images/loader 2.gif" alt="">
+        </div>
+
+        <script src="allBooks.js"></script>
+    </body>
+</html>
